@@ -6,6 +6,7 @@ import UserContext from "./Context/UserContext";
 
 import Navbar from "./components/Navbar"
 import Landing from "./components/Landing"
+import ChatPage from "./components/ChatPage"
 
 const App = () => {
   const [userData, setUserData] = useState({
@@ -52,6 +53,7 @@ const App = () => {
           <Switch>
             <Route exact path="/home" component={Home} />
             <Route exact path="/" component={Landing} />
+            <Route exact path="" component={ChatPage}/>
           </Switch>
         </UserContext.Provider>
       </BrowserRouter>

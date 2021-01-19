@@ -27,10 +27,10 @@ const Sidebar = (props) => {
             console.log(err)
         }
     })()
-    }, [])
+    }, [friendRequest])
 
     return (
-        <div class="wrapper">
+        <div class="request-wrapper">
             <nav id="sidebar">
                 <div class="sidebar-header">
                     <h3>Friend Requests</h3>
